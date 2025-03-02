@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Insights</title>
+    <link rel="icon" href="https://i.imgur.com/YKHLHEr.png" type="image/png"> <!-- Favicon link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+ <style>
+    /* Base styling */
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #000; /* Black background */
+        color: #fff; /* White text */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header */
+    header {
+        background-color: #333; /* Dark gray header */
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+        font-size: 3.5em;
+        margin: 0;
+        letter-spacing: 2px;
+    }
+
+    /* Navigation Bar */
+    nav {
+        background-color: #222; /* Dark gray navigation bar */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        margin: 0 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff; /* White text */
+        font-size: 1.1em;
+        font-weight: 600;
+        padding: 14px 20px;
+        display: block;
+        transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+        color: #aaa; /* Light gray hover effect */
+    }
+
+    /* Main Layout */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px;
+        gap: 30px;
+    }
+
+    .blog-posts {
+        width: 70%;
+    }
+
+    /* Blog Post */
+    .post {
+        background-color: #333; /* Dark background for posts */
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+    .post img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .post-content {
+        padding: 20px;
+        color: #fff; /* White text for post content */
+    }
+
+    .post h2 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+
+    .post p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #ccc; /* Light gray text */
+    }
+
+    .author-date {
+        font-size: 0.9em;
+        color: #aaa; /* Light gray date text */
+        margin-top: 15px;
+    }
+
+    .categories a {
+        text-decoration: none;
+        background-color: #444; /* Dark background for categories */
+        color: white;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-weight: 600;
+        margin-right: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    .categories a:hover {
+        background-color: #555; /* Lighter gray hover effect */
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 25%;
+        background-color: #222; /* Dark sidebar */
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+    }
+
+    .sidebar h3 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #fff; /* White text for sidebar header */
+    }
+
+    .about-me {
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #ccc; /* Light gray text */
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #222; /* Dark footer */
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .footer a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        .blog-posts {
+            width: 100%;
+        }
+
+        .sidebar {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        nav li {
+            margin: 10px 0;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Tech Insights</h1>
+    <p>Where creativity meets the digital world.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
+        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <!-- Blog Posts -->
+    <div class="blog-posts">
+        <div class="post">
+            <img src="https://t4.ftcdn.net/jpg/00/94/07/53/240_F_94075311_zPW9Sr9fAphkJMZoN9jkGnhWb5xbzI0p.jpg" alt="Tech Image">
+            <div class="post-content">
+                <h2>Exploring New Frontiers in Technology</h2>
+                <p class="author-date">By John Doe | March 1, 2025</p>
+                <p>This post delves into the rapid advancements in technology, focusing on AI, quantum computing, and the future of tech industries...</p>
+                <div class="categories">
+                    <a href="#"><i class="fas fa-laptop-code"></i> Technology</a>
+                    <a href="#"><i class="fas fa-robot"></i> AI</a>
+                    <a href="#"><i class="fas fa-cogs"></i> Quantum Computing</a>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <img src="https://t3.ftcdn.net/jpg/05/14/95/12/240_F_514951224_2dxMLbIw5qNRdPGD003chpbVcxWtcp7K.jpg" alt="Blockchain Image">
+            <div class="post-content">
+                <h2>Understanding Blockchain and Its Applications</h2>
+                <p class="author-date">By Jane Smith | February 25, 2025</p>
+                <p>In this blog post, we’ll explore how blockchain works, its applications in various industries, and the challenges it faces...</p>
+                <div class="categories">
+                    <a href="#"><i class="fas fa-circle-notch"></i> Blockchain</a>
+                    <a href="#"><i class="fas fa-money-bill-wave"></i> Finance</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>About Me</h3>
+        <p class="about-me">I'm a technology enthusiast passionate about AI, blockchain, and the future of innovation. Follow my blog to stay updated on the latest tech trends!</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>&copy; 2025 Tech Insights. All rights reserved. | Designed by Ori B</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</div>
+
+</body>
+</html>
